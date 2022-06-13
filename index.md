@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+---
+layout: post
+title:  "Create a chart using Charts framework"
+date:   2022-06-12 18:01:33 -0500
+categories: jekyll update
+---
+In WWDC 22 the new Charts framework was announced and it has never been so easy
+to create beautiful Charts. Let's get right to it..
 
-You can use the [editor on GitHub](https://github.com/AniruddhaShukla/apple-dev-blogging/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Let's create our datasource. We will show a graph of the temperatures in Kansas City
+for last week. We will create a struct which will hold the day of the week and the average temperature for that
+day respectively.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+{% highlight ruby %}
+struct TemperatureTrend: Identifiable {
+  var day: String
+  var value: Double
+  var id: String { return day }
+}
+{% endhighlight %}
 
-### Markdown
+Next we will create an array that will hold temperatures for all days Monday thru Sunday.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+{% highlight ruby %}
+let data : [TemperatureTrend] = [
+  .init(day: "Mon", value: 75),
+  .init(day: "Tue", value: 70),
+  .init(day: "Wed", value: 80),
+  .init(day: "Thur", value: 62),
+  .init(day: "Fri", value: 78),
+  .init(day: "Sat", value: 79),
+  .init(day: "Sun", value: 81),
+]
+{% endhighlight %}
 
-```markdown
-Syntax highlighted code block
+You can create various types of Charts using the new Charts framework. We will create a
+Line Chart which will display the average temperature trend over the week.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AniruddhaShukla/apple-dev-blogging/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+{% highlight ruby %}
+struct ChartView {
+  var body: some View {
+    Text("Daily temperatures for last week in Kansas City.")
+    Chart(data) {
+      LineMark(
+          x: .value("Day", $0.day)
+          y: .value("Temperature", $0.value)
+        )
+    }
+  }
+}
+{% endhighlight %}
