@@ -33,6 +33,8 @@ let data : [TemperatureTrend] = [
 ]
 {% endhighlight %}
 
+![My helpful screenshot](/assets/test-image.jpg)
+
 You can create various types of Charts using the new Charts framework. We will create a
 Line Chart which will display the average temperature trend over the week.
 
