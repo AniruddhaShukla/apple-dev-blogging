@@ -22,7 +22,7 @@ title: Aniruddha's Swift Blog
 email: the.moronic.mourinho@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I am Aniruddha Shukla - A developer with over 9 years experience developing for Apple platforms. On this site, I cover various topics required for
-  developing for Apple platforms like iOS, iPadOS and MacOS.
+  Apple development platforms focusing mainly on Swift language.
 baseurl: "/apple-dev-blogging" # the subpath of your site, e.g. /blog
 url: "https://aniruddhashukla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "AniruddhaShukla"
