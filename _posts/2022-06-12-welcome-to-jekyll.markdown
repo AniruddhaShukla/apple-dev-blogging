@@ -5,11 +5,12 @@ date:   2022-06-12 18:01:33 -0500
 categories: jekyll update
 ---
 In WWDC 22 the new Charts framework was announced and it has never been so easy
-to create beautiful Charts. Let's get right to it..
+to create beautiful Charts. You will need Xcode 14 installed which at the time of writing is in Beta.
+Let's get right to it..
 
-Let's create our datasource. We will show a graph of the temperatures in Kansas City
+In this example, we will show a graph of the average temperatures in Kansas City
 for last week. We will create a struct which will hold the day of the week and the average temperature for that
-day respectively.
+day respectively. These will be our X and Y axes on the chart.
 
 {% highlight ruby %}
 struct TemperatureTrend: Identifiable {
@@ -33,7 +34,6 @@ let data : [TemperatureTrend] = [
 ]
 {% endhighlight %}
 
-![useful image]({{ site.url }}/{{site.baseurl}}/assets/test-image.jpeg)
 
 You can create various types of Charts using the new Charts framework. We will create a
 Line Chart which will display the average temperature trend over the week.
@@ -44,10 +44,12 @@ struct ChartView {
     Text("Daily temperatures for last week in Kansas City.")
     Chart(data) {
       LineMark(
-          x: .value("Day", $0.day)
+          x: .value("Day", $0.day),
           y: .value("Temperature", $0.value)
         )
     }
   }
 }
 {% endhighlight %}
+
+![Line Chart]({{ site.url }}/{{site.baseurl}}/assets/linechart.png)
