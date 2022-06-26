@@ -53,3 +53,29 @@ struct ChartView {
 {% endhighlight %}
 
 ![Line Chart]({{ site.url }}/{{site.baseurl}}/assets/linechart.png)
+
+Sometimes, showing these temperatures as Bars for each day might make more sense. You can easily do this by
+switching `LineMark` struct with `BarMark`.
+
+{% highlight ruby %}
+BarMark(
+    x: .value("Day", $0.day),
+    y: .value("Temperature", $0.value)
+  )
+{% endhighlight %}
+
+If you want to now add a color to your bars or line chart you can use the `foregroundStyle` modifier.
+
+![Line Chart]({{ site.url }}/{{site.baseurl}}/assets/redbarchart.png)
+
+{% highlight ruby %}
+Chart(data) {
+    BarMark(
+        x: .value("Day", $0.day),
+        y: .value("Temperature", $0.value)
+    )
+    .foregroundStyle(.red)
+}
+{% endhighlight %}
+
+And that's pretty much what you need to get started with Charts.
