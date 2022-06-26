@@ -27,6 +27,7 @@ baseurl: "/apple-dev-blogging" # the subpath of your site, e.g. /blog
 url: "https://aniruddhashukla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "AniruddhaShukla"
 github_username:  "AniruddhaShukla"
+google_analytics: G-XCJ3RPMMMX
 
 # Build settings
 theme: minima
