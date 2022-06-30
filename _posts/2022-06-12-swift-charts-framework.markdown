@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Create a chart using Charts framework"
+title:  "Create a chart using Swift Charts"
 date:   2022-06-12 18:01:33 -0500
 categories: jekyll update
 ---
-In WWDC 22 the new Charts framework was announced and it has never been so easy
+In WWDC 22 the new Swift Charts framework was announced and it has never been easy
 to create beautiful Charts. You will need Xcode 14 installed which at the time of writing is in Beta.
 Let's get right to it..
 
