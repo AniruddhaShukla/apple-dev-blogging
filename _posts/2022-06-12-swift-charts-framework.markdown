@@ -54,6 +54,26 @@ struct ChartView {
 
 ![Line Chart]({{ site.url }}/{{site.baseurl}}/assets/linechart.png)
 
+We can also represent data  using points on the Line chart. Swift Charts framework allows us to
+combine Marks.
+
+{% highlight ruby %}
+Chart(data) {
+    LineMark(
+        x: .value("Day", $0.day),
+        y: .value("Temperature", $0.value)
+    )
+
+    PointMark(
+        x: .value("Day", $0.day),
+        y: .value("Temperature", $0.value)
+    )
+}
+{% endhighlight %}
+
+![Point Mark]({{ site.url }}/{{site.baseurl}}/assets/pointmark.png)
+
+
 Sometimes, showing these temperatures as Bars for each day might make more sense. You can easily do this by
 switching `LineMark` struct with `BarMark`.
 
