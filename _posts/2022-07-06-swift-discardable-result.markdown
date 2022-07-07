@@ -4,7 +4,7 @@ title:  "What is discardableResult in Swift?"
 date:   2022-07-06 18:50:45 -0500
 categories: swift
 ---
-When a function is marked with discardableResult, it allows you to ignore the return value of the function.
+When a function is marked with `@discardableResult`, it allows the caller to ignore the return value of the function.
 
 For example let’s consider a function that returns if an operation was successful.
 
