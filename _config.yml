@@ -19,7 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Aniruddha's Swift Blog
-email: the.moronic.mourinho@gmail.com
 tagline: Aniruddha's Swift Blog | A blog where I cover development topics related to Apple platforms primarily focusing on Swift language.
 description: >- # this means to ignore newlines until "baseurl:"
   I am Aniruddha Shukla - A developer with over 9 years experience developing for Apple platforms. On this site, I cover various topics required for
@@ -27,7 +26,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.swiftwithshukla.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "AniruddhaShukla"
-github_username:  "AniruddhaShukla"
 google_analytics: G-XCJ3RPMMMX
 
 # Build settings
