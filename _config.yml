@@ -31,7 +31,8 @@ github_username:  "AniruddhaShukla"
 google_analytics: G-XCJ3RPMMMX
 
 # Build settings
-remote_theme: jekyll/minima
+theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
