@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SwiftUI-Lists"
+title:  "SwiftUI List"
 date:   2022-09-24 11:35:59 -0500
 categories: swiftui
 ---
