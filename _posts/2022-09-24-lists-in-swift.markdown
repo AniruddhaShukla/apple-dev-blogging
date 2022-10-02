@@ -7,7 +7,7 @@ categories: swiftui
 SwiftUI makes it really easy to build lists similar to a UIKit Table View if you have coded in UIKit before.
 Using a `List` you can display rows of data in a single column.
 
-For example, you can display the list of cities in the US.
+For example, you can display the list of cities in the world.
 
 {% highlight ruby %}
 List {
@@ -46,5 +46,3 @@ List {
     }
 }
 {% endhighlight %}
-
-![SwiftUI List]({{ site.url }}/{{site.baseurl}}/assets/swiftuilist.png)
