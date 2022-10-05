@@ -9,4 +9,8 @@
 
   gtag('config', 'G-XCJ3RPMMMX');
 </script>
+{% if site.tags != "" %}
+  {% include collecttags.html %}
+{% endif %}
+
 </head>

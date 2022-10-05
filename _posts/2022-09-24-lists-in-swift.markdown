@@ -3,6 +3,7 @@ layout: post
 title:  "SwiftUI List"
 date:   2022-09-24 11:35:59 -0500
 categories: swiftui
+tags: lists
 ---
 SwiftUI makes it really easy to build lists similar to a UIKit Table View if you have coded in UIKit before.
 Using a `List` you can display rows of data in a single column.

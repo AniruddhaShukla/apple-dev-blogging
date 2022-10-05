@@ -3,6 +3,7 @@ layout: post
 title:  "How to display ColorPicker in SwiftUI"
 date:   2022-09-26 11:35:59 -0500
 categories: swiftui
+tags: pickers
 ---
 Color Picker is a great control in SwiftUI that provides us a way to give the user the access to choose a new system color and
 display a currently selected color.

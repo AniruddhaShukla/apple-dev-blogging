@@ -1,6 +1,13 @@
 ---
 layout: page
 ---
+<span>
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a href="/tag/{{ tag_name }}"><code class="tag-name"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+  {% endfor %}
+</span>
+
 <p class = "post-meta">
   {{ page.date | date_to_string }}
 </p>
