@@ -3,5 +3,35 @@
 @import "minima";
 
 pre, code {  background-color: #F0F2F0; }
-.tag-name { background-color: #FFFFFF; color: #000000; margin-bottom: 15px; border-radius: 200px; font-size: 19px; border-color: #828282; }
-.post-meta { font-size: 14px; color: #828282; margin-top: 25px; }
+.tag-name {
+  background-color: #FFFFFF;
+  color: #000000;
+  margin-bottom: 15px;
+  border-radius: 200px;
+  font-size: 17px;
+  border-color: #828282;
+}
+.post-meta {
+  font-size: 14px;
+  color: #828282;
+  margin-top: 25px;
+ }
+
+.post-navigation {
+  font-size: 18px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.post-navigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.post-navigation .next {
+  float: right;
+  text-align: right;
+}
