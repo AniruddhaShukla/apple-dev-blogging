@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to create a Picker View in SwiftUI. "
+title:  "How to create a Picker View in SwiftUI"
 date:   2022-11-06 19:10:00 -0600
 categories: swiftui
 tags: pickers

@@ -3,7 +3,7 @@ layout: post
 title:  "How to shuffle elements in an array in Swift"
 date:   2022-10-03 21:00:00 -0500
 categories: swift
-tags: arrays language
+tags: arrays language tips
 ---
 
 If you have an array or a sequence of elements that you want to arrange in a random order then
