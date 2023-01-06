@@ -23,7 +23,7 @@ some empty strings in the sequence you can use `filter` function to remove them.
 You can chain multiple higher order functions together.
 
 {% highlight ruby %}
-let names = ["Kate", nil, "", "Jack", "Rohan" "Mohammad", "", "Joe"]
+let names = ["Kate", nil, "", "Jack", "Rohan", "Mohammad", "", "Joe"]
 let validNames = names.compactMap { $0 }.filter { !$0.isEmpty }
 {% endhighlight %}
 
