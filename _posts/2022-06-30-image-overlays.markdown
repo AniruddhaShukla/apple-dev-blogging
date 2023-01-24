@@ -13,7 +13,7 @@ the name of the photographer who took this image.
 
 {% highlight ruby %}
 VStack(alignment: .leading) {
-  Image("backgroundImage") // replace backgroundImage with your image name.
+  Image("backgroundImage")
       .resizable()
       .aspectRatio(contentMode: .fit)
 }
@@ -51,7 +51,7 @@ is Grace Gallingam so we will display her name as a credit on our image.
 
 {% highlight ruby %}
 VStack(alignment: .leading) {
-  Image("backgroundImage") // replace backgroundImage with your image name.
+  Image("backgroundImage")
       .resizable()
       .aspectRatio(contentMode: .fit)
       .overlay(OverlayTextView(creditName: "Grace Galligan"), alignment: .bottomTrailing)
