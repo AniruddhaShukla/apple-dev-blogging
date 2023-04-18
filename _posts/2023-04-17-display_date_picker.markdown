@@ -20,6 +20,8 @@ DatePicker("Departure Date", selection: $departureDate,
                       displayedComponents: [.date])
 {% endhighlight %}
 
+![Date Picker]({{ site.url }}/{{site.baseurl}}/assets/datepicker.png)
+
 If you want to display the time along with the date you would pass
 both `date` and `hourAndMinute` to the `displayedComponents` parameter.
 
