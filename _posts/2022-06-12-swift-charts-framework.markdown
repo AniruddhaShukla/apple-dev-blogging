@@ -10,7 +10,7 @@ to create beautiful Charts. You will need Xcode 14 installed which at the time o
 Let's get right to it..
 
 In this example, we will show a graph of the average temperatures in Kansas City
-for last week. We will create a struct which will hold the day of the week and the average temperature for that
+for the last week. We will create a struct which will hold the day of the week and the average temperature for that
 day respectively. These will be our X and Y axes on the chart.
 
 {% highlight ruby %}
