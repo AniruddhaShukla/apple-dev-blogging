@@ -6,7 +6,7 @@ categories: swift
 tags: strings tips language
 ---
 
-If you want to declare a string that is really long or spans over multiple lines, then swift makes it really easy to do so with multi line string literals.
+If you want to declare a string that is really long or spans over multiple lines, then swift makes it really easy to do so with multiline string literals.
 
 The syntax to declare these strings are using the triple quotes """ instead of the double "" quotes.
 
