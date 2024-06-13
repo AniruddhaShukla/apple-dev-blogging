@@ -21,7 +21,7 @@
 title: Aniruddha's Swift Blog
 tagline: Aniruddha's Swift Blog | A blog where I cover development topics related to Apple platforms primarily focusing on Swift language.
 description: >- # this means to ignore newlines until "baseurl:"
-  I am Aniruddha Shukla - A developer with over 9 years experience developing for Apple platforms. On this site, I cover various topics required for
+  I am Aniruddha Shukla - A developer with over 11 years experience developing for Apple platforms. On this site, I cover various topics required for
   Apple development platforms focusing mainly on Swift language.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.swiftwithshukla.com" # the base hostname & protocol for your site, e.g. http://example.com
