@@ -15,7 +15,7 @@ Let’s take an example where you had to declare a simple JSON that gives info a
 {% highlight ruby %}
 let bookJSON = """
 {
-    "name": "Swift Programming",
+    "name": "Swift Programming Guide",
     "id": 12345,
     "author": "John Appleseed"
 }
@@ -24,9 +24,9 @@ let bookJSON = """
 
 In the above example the triple quotes tells the compiler that the string spans multiple lines
 and makes it more readable. Another advantage is that you can write the text within the triple quotes as if you were
-writing using a text editor making it easier to follow along.
+writing using a text editor, meaning all the indentations and line breaks will be honored making it easier to follow along.
 
-For example, the same bookJSON string when using the regular double quotes would look something like this.
+For example, the same `bookJSON` string when using the regular double quotes would look something like this.
 {% highlight ruby %}
 let bookJSON = "{ \"name\": \"Swift Programming\", \"id\": 12345, \"author\": \"John Appleseed\" }"
 {% endhighlight %}
