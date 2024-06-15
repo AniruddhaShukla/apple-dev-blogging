@@ -31,4 +31,4 @@ For example, the same `bookJSON` string when using the regular double quotes wou
 let bookJSON = "{ \"name\": \"Swift Programming\", \"id\": 12345, \"author\": \"John Appleseed\" }"
 {% endhighlight %}
 
-As we can see multiline string literals can be use to declare simple HTML, JSON or simple scripts inline making code more readable.
+As we can see multiline string literals can be use to declare simple HTML, JSON or simple scripts easily making code more readable.
