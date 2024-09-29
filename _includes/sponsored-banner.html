@@ -1,5 +1,8 @@
 <!-- _includes/sponsored-banner.html -->
-<a href="https://apps.apple.com/app/clipboard-assistant/id6705135868?mt=12" target="_blank" class="sponsored-banner">
+<a href="https://apps.apple.com/us/app/clipboard-assistant/id6705135868?mt=12" target="_blank" class="sponsored-banner">
+  <!-- Rectangular Sponsored Badge with Subtle Rounded Corners -->
+  <div class="sponsored-badge">Sponsored</div>
+
   <div class="banner-content">
     <!-- App Icon -->
     <img src="{{ '/assets/logo.png' | relative_url }}" alt="Clipboard Assistant Icon" class="banner-icon">
@@ -11,9 +14,6 @@
         Simplify your workflow! View copied content in one place, pin important items, preview media files, and keep your clipboard organized effortlessly. <strong>Download it for free!</strong>
       </p>
     </div>
-
-    <!-- Sponsored Label -->
-    <div class="sponsored-label">Sponsored</div>
   </div>
 </a>
 
@@ -65,17 +65,48 @@
     color: #666;
   }
 
-  /* Sponsored Label Style */
-  .sponsored-label {
+  /* Rectangular Sponsored Badge with Subtle Rounded Corners */
+  .sponsored-badge {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 10px;
     background-color: #ff9800;
     color: #fff;
-    padding: 4px 10px;
+    padding: 6px 12px;
     font-size: 12px;
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 3px; /* Extremely subtle rounded corners */
     text-transform: uppercase;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for more definition */
+  }
+
+  @media (max-width: 600px) {
+    .sponsored-banner {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+    }
+
+    .banner-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .banner-icon {
+      margin: 0 0 10px; /* Adjust margin for vertical alignment */
+    }
+
+    .banner-text {
+      text-align: center;
+    }
+
+    .sponsored-badge {
+      right: 50%;
+      transform: translateX(50%); /* Center the badge horizontally on small screens */
+      top: -20px;
+    }
+
+    .banner-title {
+      margin: 5px 0 0; /* Adjust spacing for smaller screens */
+    }
   }
 </style>
