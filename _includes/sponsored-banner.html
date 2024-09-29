@@ -1,0 +1,81 @@
+<!-- _includes/sponsored-banner.html -->
+<a href="https://apps.apple.com/app/clipboard-assistant/id6705135868?mt=12" target="_blank" class="sponsored-banner">
+  <div class="banner-content">
+    <!-- App Icon -->
+    <img src="{{ '/assets/logo.png' | relative_url }}" alt="Clipboard Assistant Icon" class="banner-icon">
+
+    <!-- Text Content -->
+    <div class="banner-text">
+      <h3 class="banner-title">Clipboard Assistant</h3>
+      <p class="banner-description">
+        Simplify your workflow! View copied content in one place, pin important items, preview media files, and keep your clipboard organized effortlessly. <strong>Download it for free!</strong>
+      </p>
+    </div>
+
+    <!-- Sponsored Label -->
+    <div class="sponsored-label">Sponsored</div>
+  </div>
+</a>
+
+<!-- Styles -->
+<style>
+  .sponsored-banner {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    position: relative;
+    transition: box-shadow 0.3s;
+  }
+
+  .sponsored-banner:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .banner-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .banner-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 12px;
+  }
+
+  .banner-text {
+    flex: 1;
+  }
+
+  .banner-title {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+
+  .banner-description {
+    margin: 8px 0 0;
+    font-size: 16px;
+    color: #666;
+  }
+
+  /* Sponsored Label Style */
+  .sponsored-label {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-transform: uppercase;
+  }
+</style>
