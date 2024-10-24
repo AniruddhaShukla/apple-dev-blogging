@@ -24,8 +24,8 @@ struct Capitalized {
     }
 }
 {% endhighlight %}
-The setter in the above example takes the incoming value and capitalizes it and assigns it to the value.
-The getter, as we can see provides the capitalized value.
+The setter in the above example takes the incoming value and capitalizes it and assigns it to the value property.
+The getter, as we can see then provides the capitalized value.
 
 You can now use `@Capitalized` to automatically capitalize user input:
 
