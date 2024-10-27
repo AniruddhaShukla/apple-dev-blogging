@@ -1,5 +1,9 @@
 <!-- _includes/sponsored-banner.html -->
-<a href="https://apps.apple.com/us/app/clipboard-assistant/id6705135868?mt=12" target="_blank" class="sponsored-banner">
+<a href="https://apps.apple.com/us/app/clipboard-assistant/id6705135868?mt=12"
+   target="_blank"
+   class="sponsored-banner"
+   onclick="logBannerClick()">
+
   <!-- Rectangular Sponsored Badge with Subtle Rounded Corners -->
   <div class="sponsored-badge">Sponsored</div>
 
@@ -16,6 +20,20 @@
     </div>
   </div>
 </a>
+
+<script>
+  function logBannerClick() {
+    // Google Analytics 4 Event Tracking
+    gtag('event', 'click', {
+      'event_category': 'Banner',
+      'event_label': 'Sponsored Banner Click',
+      'value': 1
+    });
+
+    // Uncomment this if you are using Universal Analytics instead of GA4
+    // ga('send', 'event', 'Banner', 'click', 'Sponsored Banner Click');
+  }
+</script>
 
 <!-- Styles -->
 <style>
