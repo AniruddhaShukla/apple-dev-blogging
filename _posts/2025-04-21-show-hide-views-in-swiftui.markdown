@@ -50,7 +50,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Toggle My Visibility")
-                .opacity(isHidden ? 0.0 : 1.0) // Dynamically set opacity
+                .opacity(isHidden ? 0.0 : 1.0)
 
             Button("Toggle") {
                 isHidden.toggle()
