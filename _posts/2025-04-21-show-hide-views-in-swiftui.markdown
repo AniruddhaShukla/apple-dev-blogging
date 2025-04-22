@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "How to Hide a View/Button in SwiftUI"
-date:   2025-04-21 22:53:00 -0700
+date:   2025-04-20 22:53:00 -0700
 categories: swiftui
 tags: tips
 ---
 
-When developing SwiftUI applications, you'll often encounter scenarios where you need to make a view, like a `Text`, `Image`, or even a `Button`, disappear from the screen. If you're coming from UIKit, you might instinctively look for an `isHidden` property. However, SwiftUI, at least at the time of writing, doesn't offer a direct equivalent in the same way. Instead, one of the primary methods to achieve this is by using the `.opacity()` modifier.
+You'll often encounter scenarios where you need to make a view, like a `Text`, `Image`, or even a `Button`, disappear from the screen.
+If you're coming from UIKit, you might instinctively look for an `isHidden` property. However, SwiftUI, at least at the time of writing, doesn't offer a direct equivalent in the same way. Instead, one of the primary methods to achieve this is by using the `.opacity()` modifier.
 
 The `.opacity()` modifier allows you to control the transparency of a view. By setting its value to `0.0`, you can make a view completely invisible, effectively hiding it from the user.
 
